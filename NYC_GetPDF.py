@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr 15 08:42:34 2016
+
+@author: Gretel_MacAir
+"""
+
 # %%Import libs
 import requests
 import urllib
