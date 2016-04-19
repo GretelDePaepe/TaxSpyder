@@ -1,2 +1,2 @@
 # TaxSpyder
-Spidering and scraping of publicly available tax records
+Spidering and scraping of publicly available tax records.
