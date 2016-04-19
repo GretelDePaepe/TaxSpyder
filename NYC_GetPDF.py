@@ -110,7 +110,6 @@ def get_NPVtaxPDF(number, street, area):
 
 
 def main(argv):
-    upToNumber = (0, 1000)
     street = ''
     area = 1
     try:
@@ -128,18 +127,18 @@ def main(argv):
         else:
             if opt in ("-u", "--upto"):
                 upto = arg
-                numbers = (0, upto)
+                numbers = range(int(upto))
             elif opt in ("-s", "--street"):
                 street = arg
             elif opt in ("-a", "--area"):
                 area = arg
-            for n in numbers:
-                number = str(n)
-                try:
-                    get_PTBtaxPDF(number, street, area)
-                    get_NPVtaxPDF(number, street, area)
-                except:
-                    pass
+        for n in numbers:
+            number = str(n)
+            try:
+                get_PTBtaxPDF(number, street, area)
+                get_NPVtaxPDF(number, street, area)
+            except:
+                pass
 
 if __name__ == "__main__":
     main(sys.argv[1:])
