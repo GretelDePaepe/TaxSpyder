@@ -1,2 +1,2 @@
-# NYC-Tax-Spider
-Spidering and scraping of NYC tax records
+# TaxSpyder
+Spidering and scraping of publicly available tax records.
